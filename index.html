@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chord Practice Tool</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <img id="gear" src="gear.svg" />
+    <div id="settings">
+
+      <!-- options for notes -->
+      <div>
+        <label>Notes</label>
+        <ul id="notes">
+          <li>
+            <input type="checkbox" name="A" class="note" checked />
+            <label>A</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Asharp" class="note" />
+            <label>A♯</label>
+            <input type="checkbox" name="Bflat" class="note" checked />
+            <label>B♭</label>
+          </li>
+          <li>
+            <input type="checkbox" name="B" class="note" checked />
+            <label>B</label>
+          </li>
+          <li>
+            <input type="checkbox" name="C" class="note" checked />
+            <label>C</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Csharp" class="note" checked />
+            <label>C♯</label>
+            <input type="checkbox" name="Dflat" class="note" />
+            <label>D♭</label>
+          </li>
+          <li>
+            <input type="checkbox" name="D" class="note" checked />
+            <label>D</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Dsharp" class="note" />
+            <label>D♯</label>
+            <input type="checkbox" name="Eflat" class="note" checked />
+            <label>E♭</label>
+          </li>
+          <li>
+            <input type="checkbox" name="E" class="note" checked />
+            <label>E</label>
+          </li>
+          <li>
+            <input type="checkbox" name="F" class="note" checked />
+            <label>F</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Fsharp" class="note" checked />
+            <label>F♯</label>
+            <input type="checkbox" name="Gflat" class="note" />
+            <label>G♭</label>
+          </li>
+          <li>
+            <input type="checkbox" name="G" class="note" checked />
+            <label>G</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Gsharp" class="note" />
+            <label>G♯</label>
+            <input type="checkbox" name="Aflat" class="note" checked />
+            <label>A♭</label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- options for chords-->
+      <div>
+        <input type="checkbox" id="chordsEnabled" />
+        <label>Chords Enabled</label>
+        <ul id="chords">
+          <li>
+            <input type="checkbox" name="empty" class="chord" />
+            <label>No Chord</label>
+          </li>
+          <li>
+            <input type="checkbox" name="M" class="chord" />
+            <label>M</label>
+            <input type="checkbox" name="Maj" class="chord" />
+            <label>Maj</label>
+          </li>
+          <li>
+            <input type="checkbox" name="mm" class="chord" />
+            <label>m</label>
+            <input type="checkbox" name="Min" class="chord" />
+            <label>Min</label>
+          </li>
+          <li>
+            <input type="checkbox" name="delta7" class="chord" checked />
+            <label>Δ7</label>
+            <input type="checkbox" name="Maj7" class="chord" />
+            <label>Maj7</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Dom7" class="chord" checked />
+            <label>7</label>
+          </li>
+          <li>
+            <input type="checkbox" name="minus7" class="chord" checked />
+            <label>-7</label>
+            <input type="checkbox" name="Min7" class="chord" />
+            <label>Min7</label>
+          </li>
+          <li>
+            <input type="checkbox" name="half7" class="chord" />
+            <label>ø7</label>
+            <input type="checkbox" name="f5f9" class="chord" />
+            <label>m7♭5</label>
+          </li>
+          <li>
+            <input type="checkbox" name="cir7" class="chord" />
+            <label>○7</label>
+            <input type="checkbox" name="dim7" class="chord" />
+            <label>dim7</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <div id="card">
+        <h1 id="card-text"></h1>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
