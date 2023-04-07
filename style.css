@@ -1,0 +1,114 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #dbdbdb;
+  background-color: #1d1d1d;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+
+  max-width: 1280px;
+  height: 100%;
+}
+
+#card {
+  margin: auto;
+  padding: 12px;
+
+  aspect-ratio: 5/7;
+  width: 200px;
+
+  background-color: #222222;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  box-shadow: 7px 7px 5px #9b9b9b44;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#gear {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+
+  height: 30px;
+  cursor: pointer;
+
+  filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+}
+
+#gear:hover {
+  filter: invert(100%) sepia(3%) saturate(618%) hue-rotate(276deg) brightness(118%) contrast(87%);
+}
+
+#settings {
+  display: none;
+
+  box-sizing: border-box;
+  position: absolute;
+  width: 100vw;
+  min-height: 54px;
+
+  background-color: #333333;
+
+  padding: 12px;
+}
+
+#settings > div {
+  padding: 10px;
+}
+
+#settings ul {
+  margin: 0;
+  list-style: none;
+}
+
+#chords {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #0a1925;
+    background-color: #ffffff;
+  }
+
+  #card {
+    background-color: #f3f3f3;
+    border: 1px solid #281d4e;
+    box-shadow: 7px 7px 5px #2e2e2e9c;
+  }
+
+  #gear {
+    filter: none;
+  }
+
+  #gear:hover {
+    filter: invert(0%) sepia(26%) saturate(4223%) hue-rotate(193deg) brightness(96%) contrast(73%);
+  }
+
+  #settings {  
+    background-color: #dddddd;
+  }
+}
